@@ -1,0 +1,188 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clock-dial {
+    width: 500px;
+    height: 500px;
+    border: 20px solid green;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.point {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    /*To get the point in the center of the clock 
+    (240px = (Dial width - point width)/ 2) */
+    top: 240px;
+    left: 240px;
+}
+
+.hour {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+}
+
+.hour-1 {
+    top: 40px;
+    left: 360px;
+}
+.hour-2 {
+    top: 125px;
+    left: 440px;
+}
+.hour-3 {
+    top: 235px;
+    left: 470px;
+}
+.hour-4 {
+    top: 340px;
+    left: 440px;
+}
+.hour-5 {
+    top: 430px;
+    left: 350px;
+}
+.hour-6 {
+    bottom: 5px;
+    left: 239px;
+}
+.hour-7 {
+    top: 430px;
+    left: 130px;
+}
+.hour-8 {
+    top: 340px;
+    left: 40px;
+}
+.hour-9 {
+    top: 235px;
+    left: 13px;
+}
+.hour-10 {
+    top: 125px;
+    left: 35px;
+}
+.hour-11 {
+    top: 40px;
+    left: 127px;
+}
+.hour-12 {
+    top: 3px;
+    left: 234px;
+}
+
+.brand {
+    font-size: 29px;
+    font-weight: bold;
+    color: purple;
+    position: absolute;
+    top: 75px;
+    left: 175px;
+}
+
+.minute-hand-container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    /* background-color: blue; */
+    /*To position the minute hand container in the center of the clock 
+    (50px = (Dial width - Minute hand container width)/ 2) */
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+}
+
+.minute-hand {
+    position: relative;
+}
+
+.minute-hand .hand {
+    width: 4px;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    /*To position the minute hand in the center of the clock 
+    (198px = (Minute Hand container width - Minute Hand width)/ 2) */
+    left: 198px;
+}
+
+.minute-hand .arrow {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    transform: rotate(180deg);
+    position: absolute;
+    top: -5px;
+    left: 190px;
+}
+
+.hour-hand-container {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    /*To position the hour hand container in the center of the clock 
+    (50px = (Dial width - Hour hand container width)/ 2) */
+    top: 100px;
+    left: 100px;
+    border-radius: 50%;
+}
+
+.hour-hand {
+    position: relative;
+}
+
+.hour-hand .hand {
+    width: 4px;
+    height: 120px;
+    background-color: black;
+    /* background-color: yellow; */
+    position: absolute;
+    /*To position the hour hand in the center of the clock 
+    (198px = (Hour Hand container width - Hour Hand width)/ 2) */
+    top: 29px;
+    left: 148px;
+}
+
+.hour-hand .arrow {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 15px;
+    left: 140px;
+}
+
+.second-hand-container {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+     /*To position the second hand container in the center of the clock 
+    (50px = (Dial width - Second Hand container width)/ 2) */
+    top: 75px;
+    left: 75px;
+    border-radius: 50%;
+}
+
+.second-hand {
+    position: relative;
+}
+
+.second-hand .hand {
+    width: 2px;
+    height: 160px;
+    background-color: black;
+    position: absolute;
+    /*To position the second hand in the center of the clock 
+    (198px = (Second Hand container width - Second Hand width)/ 2) */
+    top: 14px;
+    left: 174px;
+}
